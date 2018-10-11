@@ -1,0 +1,115 @@
+@charset 'utf-8';
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f9f9f9;
+	font-size: 14px;
+	padding-top: 40px;
+}
+.cover{
+	width: 100%;
+	height: auto;
+}
+.footer{
+	height: 80px;
+	margin-top: -80px;
+	color: #9d9d9d;
+	text-align: center;
+}
+.wrap{
+	padding-bottom: 80px;
+}
+.layout{
+	width: 854px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+.main-content{
+	padding:0 34px 30px 34px;
+	background: white;
+}
+.headlogo{
+	padding-bottom: 40px;
+
+}
+.milogo{
+	display: block;
+	width: 49px;
+	height: 48px;
+	margin: 0 auto;
+	background: url(../images/milogo.png);
+}
+.headtitle{
+	text-align: center;
+	font-size: 30px;
+}
+h4{
+	font-weight: normal;
+}
+.resignbox{
+	width: 332px;
+	padding: 30px 0;
+	line-height: 20px;
+	margin: 0 auto;
+}
+.countrybox{
+	padding-bottom: 15px;
+	position: relative;
+}
+.country_box{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 14px;
+	border:1px solid #e8e8e8;
+	color: #555;
+	cursor: pointer;
+}
+.china{
+	width: 275px;
+	border-right: 1px solid #e8e8e8;
+	cursor: pointer;
+}
+.rewrite{
+	margin-top: -10px;
+	margin-bottom: 15px;
+}
+.phone-number{
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+.num{
+	float: left;
+	border-right: 1px solid #e8e8e8;
+	line-height: 20px;
+	height: 40px;
+	width: 50px;
+}
+.inp{
+	float: right;
+	width: 236px;
+	border: none;
+	padding: 10px;
+	height: 20px;
+	line-height: 20px;
+}
+.btn{
+	color: white;
+	width: 330px;
+    height: 42px;
+    /*margin: 0 auto;*/
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #ff6700;
+    margin-top: 15px;
+    border: 1px solid rgba(186,186,186,0.3);
+}
+.under-resign{
+	text-align: center;
+	padding-top: 40px;
+}

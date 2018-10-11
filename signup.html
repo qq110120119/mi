@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册小米账号</title>
+	<link rel="stylesheet" type="text/css" href="css/signup.css">
+</head>
+<body>
+	<div class="cover">
+		<div class="wrap">
+			<div class="layout">
+				<div class="main-content">
+					<div class="headlogo">
+						<a href="" class="milogo"></a>
+					</div>
+					<div class="headtitle">
+						<h4>注册小米账号</h4>
+					</div>
+					<div>
+						<div class="resignbox">
+							<form class="resign-in" onsubmit="return false">
+								<h4 class="country">国家/地区</h4>
+								<div class="countrybox">
+									<div class="country_box">
+										<p class="china">中国</p>
+										<i class="icon"></i>
+									</div>
+								</div>
+								<div class="rewrite">成功注册后,国家/地区不能被修改</div>
+							    <h4 class="phone-number">手机号码</h4>
+							    <div class="phonebox country_box">
+								     <div class="num"></div>
+								     <div class="ipt">
+									     <input type="" name="username" placeholder="请输入手机号码" class="inp">
+								     </div>								
+							    </div>
+							    <div class="butt">
+									<button class="btn" type="submit" name="login-btn">立即注册</button>
+								</div>
+							</form>			
+						</div>
+						<div class="under-resign">
+							<div class="privite">注册帐号即表示您同意并愿意遵守小米 用户协议和隐私政策</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+	<script src="js/common/ajax.js"></script>
+	<script type="text/javascript" src="js/signup.js"></script>
+	<script>
+        register.init('.resign-in');
+    </script>
+</body>
+</html>
