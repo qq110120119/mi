@@ -564,7 +564,7 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     color: #ff6700;
 }
-.right-banner:hover,.left-banner:hover,.pic_ban:hover,.brick-item:hover,.foryou_item:hover,.hot_li:hover{
+.right-banner:hover,.left-banner:hover,.pic_ban:hover,.brick-item:hover,.foryou_item:hover,.hot_li:hover,.book_li:hover,.videw_li:hover{
 	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 	transform: translate3d(0,-2px,0);
 	transition: all .3s linear;
@@ -900,3 +900,315 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
     color: #ff6700;
 }
+ .book_ul{
+ 	width: 1240px;
+    height: 420px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+ }
+.book_li{
+	position: relative;
+    float: left;
+    width: 296px;
+    height: 374px;
+    padding: 45px 0 0;
+    border-top: 1px solid #e0e0e0;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    background: #fff;
+    border-top-color: #ffac13;
+    color: #ffac13;
+}
+.book_li .title{
+	margin: 0 10px 18px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.book_lifirst{
+	margin-left: 0;
+}
+.book_swiper{
+	height: 340px;
+    overflow: hidden;
+}
+.bookswiper_ul{
+	width: 888px;
+	height: 340px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+}
+.bookswiper_ul li{
+	float: left;
+    width: 296px;
+    height: 340px;
+}
+.bookswiper_ul .name{
+	margin: 0 20px 5px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #333;
+}
+.bookswiper_ul .desc{
+	margin: 0 48px 10px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    overflow: hidden;
+    color: #b0b0b0;
+}
+.bookswiper_ul .price{
+	color: #333;
+	height: 21px;
+    margin: 0 10px 15px;
+    text-align: center;
+}
+.bookswiper_ul .figure-img{
+	width: 216px;
+    height: 154px;
+    margin: 0 auto;
+}
+.bookswiper_ul .figure-img img{
+	width: 216px;
+    height: 154px;
+}
+.btn-le,.btn-ri{
+	display: none;
+}
+.book_li:hover .btn-le,.book_li:hover .btn-ri{
+	display: block;
+}
+/*视频部分*/
+.videw_ul{
+	width: 1240px;
+    height: 285px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.videw_li{
+	position: relative;
+    float: left;
+    width: 296px;
+    height: 285px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    text-align: center;
+    background: #fff;
+}
+.videw_lifirst{
+	margin-left: 0;
+}
+.videw_li .figure-img{
+	position: relative;
+    width: 296px;
+    height: 180px;
+    margin: 0 0 28px;
+}
+.videw_li .figure-img .play{
+	position: absolute;
+    left: 20px;
+    bottom: 10px;
+    width: 32px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    color: #fff;
+    background: #333;
+}
+.videw_li .figure-img .play:hover{
+	background: orange;
+}
+.videw_li .figure-img img{
+	width: 296px;
+    height: 180px;
+}
+.videw_li .title{
+	margin: 0 0 6px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+}
+}
+.videw_li .desc{
+	height: 18px;
+    margin: 0;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.videw{
+	margin-bottom: 60px;
+}
+/*底部*/
+.site-footer{
+	width: 100%;
+	height: 272px;
+	background: white;
+}
+.footer-main{
+	margin: 0 auto;
+	width: 1226px;
+	height: 272px;
+}
+.footer-service{
+	height: 26px;
+	padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.service_ul{
+	margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.service_ul li{
+	float: left;
+    width: 19.8%;
+    height: 25px;
+    border-left: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+.service_ul li a{
+	color: #616161;
+}
+.service_ul li a:hover{
+	color: orange;
+}
+.service_ul .first{
+	border-left: 0;
+}
+.service_ul li .iconfont{
+	margin-right: 6px;
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: -4px;
+}
+.footer-link{
+	width: 1226px;
+	height: 112px;
+	padding: 40px 0;
+}
+.link_dl{
+	float: left;
+    width: 160px;
+    height: 112px;
+    margin: 0;
+    color: #424242;
+}
+.link_dl dt{
+	margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.link_dl dd{
+	margin: 10px 0 0;
+    font-size: 12px;
+    color: #333;
+}
+.link_dl dd:hover{
+	color: orange;
+	cursor: pointer;
+}
+.contack{
+	float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+.contack .phone{
+	margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+.contack .time{
+	margin: 0 0 16px;
+    font-size: 12px;
+    text-align: center;
+    color: #616161;
+}
+.contack .message{
+	display: inline-block;
+	border-color: #ff6700;
+    background: #fff;
+    color: #ff6700;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+}
+.contack .message:hover{
+	background: #ff6700;
+	color: white;
+}
+/*真正的底部*/
+.footer{
+	height: 120px;
+	overflow:hidden;
+	padding: 30px 0;
+    font-size: 12px;
+    background: #fafafa;
+}
+.footer-main{
+	width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer-logo{
+	float: left;
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;
+    background: url(../images/mi_03.jpg) no-repeat 50% 50%;
+}
+.footer-text{
+	float: left;
+    color: #b0b0b0;
+}
+.text_p{
+	margin: 0;
+    line-height: 18px;
+}
+.text_p a{
+	color: #757575;
+}
+.text_p span{
+	margin: 0 0.002px;
+    font-family: sans-serif;
+}
+.link_pic{
+	float: right;
+    height: 28px;
+    margin: 4px 0 0;
+}
+.link_pic img{
+	width: auto;
+    height: 28px;
+    margin-left: 0px;
+}
+.mi-end{
+	height: 72px;
+}
+.mi_end{
+    margin: 30px auto 0;
+    width: 267px;
+    height: 19px;
+    background: url(../images/slogan2016.png);
+}
+
+
+
