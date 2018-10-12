@@ -1,0 +1,323 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+b,strong{
+	font-weight: normal;
+}
+i,em{
+	font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+	font-size: 16px;
+}
+.middle_content{
+	width: 1226px;
+	margin: 0 auto;
+}
+/*img{
+	display:block;
+}*/
+/*头部*/
+#site-top{
+	width: 100%;
+	height: 40px;
+	background: #333333;}
+
+.site_top{
+	width: 1280px; 
+	height: 40px;
+	background: #333333;
+	margin:0 auto;
+}
+.top-navl{
+	width: 975px;
+	height: 40px;
+	float: left;
+}
+.top-navr{
+	width: 305px;
+	height: 40px;
+	float: left;
+}
+.site_top li{
+	float: left;
+}
+.top-navl li a{
+	display: block;
+	font-size: 12px;
+	line-height: 12px;
+	color:#a4b094;
+	border-right: 1px solid #424242;
+	padding-right:9px;
+	margin:14px 10px 14px 0;
+}
+.top-navl li a:hover{
+	color: white;
+}
+.top-navl li:nth-child(1) {
+	margin-left: 27px;
+}
+.top-navl li:nth-child(8) a {
+	border-right: 0;
+}
+.top-navr li a{
+	display: block;
+	font-size: 12px;
+	line-height: 12px;
+	color: #b0b0b0;
+	margin-top: 14px;
+	margin-bottom: 15px;
+}
+.top-navr li a:hover{
+	color: white;
+}
+.top-navr li:nth-child(2) a{
+	width: 39px;
+	height:12px;
+	border-left:1px solid #424242;
+	border-right:1px solid #424242; 
+	text-align: center;
+	margin-left: 7px;
+	margin-right: 12px;
+} 
+.top-navr .last{
+	width: 120px;
+	height: 40px;
+	background:url(../images/ch_02.jpg) no-repeat #424242;
+	line-height: 40px;
+	vertical-align: middle;
+	margin-left: 25px;}
+.top-navr .last a{
+	margin-left: 41px;
+}
+.top-navr .last img{
+	margin-left: 17px;
+	margin-right:4px;
+	border:none;
+}
+
+/*顶部下面导航*/
+#head{
+	width: 1226px;
+	height: 100px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#head .logo{
+	width: 62px;
+	height:100px;
+	float: left;
+	margin-top: 22px;
+}
+.product-nav{
+	width: 702px;
+	height: 100px;
+	padding-left: 142px;
+}
+#head .logo,.product-nav{
+	float: left;
+}
+.search{
+	float: right;
+}
+
+.product-nav li a{
+	float:left;
+	margin-right: 20px;
+	margin-top: 43px;
+	font-size: 14px;
+	line-height: 14px;
+	color:#333333;
+}
+.search{
+	width: 296px;
+	height: 50px;
+	margin-top: 25px;
+}
+.search .se,.pic{
+	float: left;
+}
+.search .se{
+	width: 244px;
+	height: 48px;
+	border:1px solid #e0e0e0;
+	border-right: 0;
+}
+.search .pic{
+	width: 50px;
+	height: 50px;
+	border:1px solid #e0e0e0;
+	background: url(../images/search_03.jpg);
+}
+#head li a:hover{
+	color: orange;
+}
+/*尾部*/
+.site-footer{
+	width: 100%;
+	height: 272px;
+	background: white;
+}
+.footer-main{
+	margin: 0 auto;
+	width: 1226px;
+	height: 272px;
+}
+.footer-service{
+	height: 26px;
+	padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.service_ul{
+	margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.service_ul li{
+	float: left;
+    width: 19.8%;
+    height: 25px;
+    border-left: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+.service_ul li a{
+	color: #616161;
+}
+.service_ul li a:hover{
+	color: orange;
+}
+.service_ul .first{
+	border-left: 0;
+}
+.service_ul li .iconfont{
+	margin-right: 6px;
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: -4px;
+}
+.footer-link{
+	width: 1226px;
+	height: 112px;
+	padding: 40px 0;
+}
+.link_dl{
+	float: left;
+    width: 160px;
+    height: 112px;
+    margin: 0;
+    color: #424242;
+}
+.link_dl dt{
+	margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.link_dl dd{
+	margin: 10px 0 0;
+    font-size: 12px;
+    color: #333;
+}
+.link_dl dd:hover{
+	color: orange;
+	cursor: pointer;
+}
+.contack{
+	float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+.contack .phone{
+	margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+.contack .time{
+	margin: 0 0 16px;
+    font-size: 12px;
+    text-align: center;
+    color: #616161;
+}
+.contack .message{
+	display: inline-block;
+	border-color: #ff6700;
+    background: #fff;
+    color: #ff6700;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+}
+.contack .message:hover{
+	background: #ff6700;
+	color: white;
+}
+/*真正的底部*/
+.footer{
+	height: 120px;
+	overflow:hidden;
+	padding: 30px 0;
+    font-size: 12px;
+    background: #fafafa;
+}
+.footer-main{
+	width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer-logo{
+	float: left;
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;
+    background: url(../images/mi_03.jpg) no-repeat 50% 50%;
+}
+.footer-text{
+	float: left;
+    color: #b0b0b0;
+}
+.text_p{
+	margin: 0;
+    line-height: 18px;
+}
+.text_p a{
+	color: #757575;
+}
+.text_p span{
+	margin: 0 0.002px;
+    font-family: sans-serif;
+}
+.link_pic{
+	float: right;
+    height: 28px;
+    margin: 4px 0 0;
+}
+.link_pic img{
+	width: auto;
+    height: 28px;
+    margin-left: 0px;
+}
+.mi-end{
+	height: 72px;
+}
+.mi_end{
+    margin: 30px auto 0;
+    width: 267px;
+    height: 19px;
+    background: url(../images/slogan2016.png);
+}

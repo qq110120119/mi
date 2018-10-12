@@ -1156,7 +1156,7 @@ h1,h2,h3,h4,h5,h6{
 	color: white;
 }
 /*真正的底部*/
-.footer{
+.lastfooter{
 	height: 120px;
 	overflow:hidden;
 	padding: 30px 0;
