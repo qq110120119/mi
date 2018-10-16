@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.nav-items{
+			position: relative;
+		}
+	.nav-items a{
+		display: block;
+	}
+	.item-children{
+		display: none;
+		position: absolute;
+		width: 1227px;
+		height: 230px;
+		top: 140px;
+		left: 146px;
+		z-index: 100;
+		background: white;
+	}
+	.item-children .container .figure-img img{
+		width: 160px;
+		height: 110px;
+	}
+	.children-list li{
+		float: left;
+	}
+	.items{
+		width: 76px;
+		height: 100px;
+		background: pink;
+		text-align: center;
+		list-style: none;
+		line-height: 76px;
+		float: left;
+	}
+	a{
+		text-decoration: none;
+		color: #333;
+	}
+
+
+
+
+	</style>
+</head>
+<body>
+	<li class="items">
+		<a href="#" class="slidedown-a">小米手机</a>
+			<div class="item-children">
+					<div class="container">
+							<ul class="children-list clear-fix">
+								<li>
+									<div class="figure-img">
+										<a href="">
+											<img src="images/qingchun-320.png">
+										</a>
+									</div>
+								<div class="title">小米8 青春版</div>
+								<p class="price">1399元起</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+		</li>
+		<li class="items">
+		<a href="#" class="slidedown-a">小米手机</a>
+			<div class="item-children">
+					<div class="container">
+							<ul class="children-list clear-fix">
+								<li>
+									<div class="figure-img">
+										<a href="">
+											<img src="images/qingchun-320.png">
+										</a>
+									</div>
+								<div class="title">小米8 52548青春版</div>
+								<p class="price">8888元起</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+		</li>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript">
+			$(".items").on('mouseenter',(function(){
+  				// $(".item-children").slideDown();
+  				$(".item-children").stop();
+  				$(".item-children").slideToggle("fast");
+			}));
+			$(".items").on('mouseleave',(function(){
+  				// $(".item-children").slideUp();
+  				$(".item-children").stop();
+  				$(".item-children").slideToggle("fast");
+			}));
+		</script>
+	
+</body>
+</html>

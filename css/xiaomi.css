@@ -110,34 +110,79 @@ h1,h2,h3,h4,h5,h6{
 	width: 1226px;
 	height: 100px;
 	margin:0 auto;
-	overflow:hidden;
+	position: relative;
 }
 #head .logo{
 	width: 62px;
-	height:100px;
 	float: left;
 	margin-top: 22px;
-}
-.product-nav{
-	width: 702px;
-	height: 100px;
-	padding-left: 142px;
+	overflow: hidden;
 }
 #head .logo,.product-nav{
 	float: left;
+}
+.product-navul{
+	position: relative;
+    float: left;
+    width: 655px;
+    height: 88px;
+    margin: 0;
+    padding: 12px 0 0 30px;
+    list-style-type: none;
+    font-size: 16px;
+    padding-left: 165px;
+}
+.product-navul .navul-li{
+	float: left;
+}
+.navul-li a{
+	display: block;
+    padding: 26px 10px 38px;
+    color: #333;
+}
+.navul-list{
+	position: absolute;
+	top: 100px;
+	display: none;
+}
+.product-navul li a:hover{
+	color: #ff6700;
+}
+.under-ul{
+	display: none;
+	width: 1226px;
+	position: absolute;
+	top: 100px;
+	height: 200px;
+	left: -62px;
+	z-index: 111;
+	background: white;
+}
+.navul-list{
+	width: 1226px;
+	position: absolute;
+	top: 100px;
+	height: 200px;
+	left: -62px;
+	z-index: 111;
+	background: white;
+	display: none;
+}
+.under-ul .list-div{
+	float: left;
+}
+.under-ul .list-div .figure-img a img{
+	width: 160px;
+	height: 110px;
+}
+.under-ul .list-div .figure-img {
+	margin:0 auto;
 }
 .search{
 	float: right;
 }
 
-.product-nav li a{
-	float:left;
-	margin-right: 20px;
-	margin-top: 43px;
-	font-size: 14px;
-	line-height: 14px;
-	color:#333333;
-}
+
 .search{
 	width: 296px;
 	height: 50px;
@@ -147,19 +192,21 @@ h1,h2,h3,h4,h5,h6{
 	float: left;
 }
 .search .se{
+	float: left;
 	width: 244px;
 	height: 48px;
 	border:1px solid #e0e0e0;
 	border-right: 0;
 }
+.search-list{
+	float: left;
+}
 .search .pic{
+	float: left;
 	width: 50px;
 	height: 50px;
 	border:1px solid #e0e0e0;
 	background: url(../images/search_03.jpg);
-}
-#head li a:hover{
-	color: orange;
 }
 
 /*轮播图部分*/
