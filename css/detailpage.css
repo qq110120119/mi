@@ -224,23 +224,23 @@
 	padding: 0 27px;
 	display: block;
 }
-.choose-ul .btn a .name{
+.choose-ul .btn .name{
 	width: 170px;
     overflow: hidden;
     display: inline-block;
 }
-.choose-ul .btn a .price{
+.choose-ul .btn .price{
 	float: right;
 	text-align: left;
 	color: #757575;
 	font-size: 16px;
 }
-.choose-ul .active a{
+/*.choose-ul .active a{
 	color: #ff6700;
 	text-align: left;
 	padding: 0 27px;
 	display: block;
-}
+}*/
 .join-car{
 	padding: 0;
     margin: 10px 0 20px 0;
@@ -287,6 +287,6 @@
     vertical-align: middle;
     margin-top: -2px;
 }
-.choose-color .choose-ul .btn a{
+.choose-color .choose-ul .btn {
 	text-align: center;
 }

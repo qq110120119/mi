@@ -26,7 +26,7 @@ var register = (function(){
                         _this.register(data);
                     }
                 }
-                sendAjax('http://localhost:8089/mi/php/signup.php', params);
+                sendAjax('http://localhost:8089/aaa/mi/php/signup.php', params);
             },
             // 判断用户名称是否存在
             this.$usernameInp. addEventListener('change', function(){
@@ -40,7 +40,7 @@ var register = (function(){
                         _this.checkUsername(data);
                     }
                 }
-                sendAjax('http://localhost:8089/mi/php/check-username.php', params);
+                sendAjax('http://localhost:8089/aaa/mi/php/check-username.php', params);
             }, false);
         },
         checkUsername: function(data) {
@@ -55,7 +55,8 @@ var register = (function(){
         },
         register: function(data) {
             if(data.code == 200) {
-                //   注册成功
+                alert('注册成功')
+                location.href='xiaomiguanwang.html';
              } else {
                 
              }

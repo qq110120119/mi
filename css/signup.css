@@ -87,12 +87,14 @@ h4{
 	width: 50px;
 }
 .inp{
+	width: 310px;
+	height: 22px;
 	float: right;
-	width: 236px;
 	border: none;
 	padding: 10px;
-	height: 20px;
 	line-height: 20px;
+	border: 1px solid #999;
+	margin-bottom: 20px;
 }
 .btn{
 	color: white;

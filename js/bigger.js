@@ -105,3 +105,49 @@ var glass = (function () {
         }
     
     }())
+
+var detail=(function(){
+    return{
+        init:function(){
+            this.getjsonData();
+            this.event();
+            this.getPhoneData();
+        },
+        event:function(){
+            $('.choose-ul').on('click','li',function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                // console.log($(this).find('.name').html());
+                // localStorage.name =$(this).find('.name').html()
+                // console.log( localStorage.name);
+                // localStorage.price =$(this).find('.price').html();
+                // console.log( localStorage.price);
+                
+                // console.log($(this).find('.price').html());
+                // console.log($(this).find('.color').html());
+            });
+
+            $('.btn-join').on('click',function(){
+                console.log(1);
+                console.log($('.active').find('.name').html());
+                console.log($('.active').find('.price').html());
+                console.log($('.active').find('.color').html());
+                localStorage.name =$('.active').find('.name').html()              
+                localStorage.price =$('.active').find('.price').html();
+                localStorage.color=$('.active').find('.color').html(); 
+                alert('已添加到购物车');
+                location.href='cart.html';
+
+
+            })
+        },
+        getjsonData:function(){
+            $.getJSON("js/json.json", function(data){
+               // console.log(data)
+            });
+        },
+        getPhoneData:function(){
+           var phone_name= $('.pro-title').html();
+           console.log(phone_name);
+        }
+    }
+}())

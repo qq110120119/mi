@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>购物车</title>
 	<link rel="stylesheet" type="text/css" href="css/cart.css">
-	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/xiaomi.css">
 </head>
 <body>
 	<div class="cart-head">
@@ -25,11 +25,81 @@
 			</div>
 		</div>
 	</div>
-	<div class="cart-main"></div>
+	<div class="cart-main">
+		<div class="container">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" id="shopping">
+	        	<form action="" method="post" name="myform">
+		            <tr class="list-head clear-fix">
+		                <td class="title_1"><input id="allCheckBox" type="checkbox" value="" onclick="selectAll()" />全选</td>
+		                <td class="title_2" colspan="2">商品名称</td>
+		                <td class="title_4">单价</td>
+		                <td class="title_5">数量</td>
+		                <td class="title_6">小计</td>
+		                <td class="title_7">操作</td>
+		            </tr>
+		            	<tr id="product1">
+			                <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></td>
+			                <td class="cart_td_2"><img src="images/qingchun-80.png" alt="shopping"/></td>
+			                <td class="cart_td_3"><a href="#">红米6A 全网通版 2GB内存 16GB 流沙金</a></td>
+			                <td class="cart_td_4">599</td>
+			                <td class="cart_td_5"><a onclick="changeNum('num_1','minus')" class="hand">-</a> <input id="num_1" type="text"  value="1" class="num_input" readonly="readonly"/> <a onclick="changeNum('num_1','add')"  class="hand">+</a></td>
+			                <td class="cart_td_6"></td>
+			                <td class="cart_td_7"><a href="javascript:deleteRow('product1');">删除</a></td>
+		           		</tr>
+		           		<tr id="product1">
+			                <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></td>
+			                <td class="cart_td_2"><img src="images/qingchun-80.png" alt="shopping"/></td>
+			                <td class="cart_td_3"><a href="#">红米6A 全网通版 2GB内存 16GB 流沙金</a></td>
+			                <td class="cart_td_4">599</td>
+			                <td class="cart_td_5"><a onclick="changeNum('num_1','minus')" class="hand">-</a> <input id="num_1" type="text"  value="1" class="num_input" readonly="readonly"/> <a onclick="changeNum('num_1','add')"  class="hand">+</a></td>
+			                <td class="cart_td_6"></td>
+			                <td class="cart_td_7"><a href="javascript:deleteRow('product1');">删除</a></td>
+		           		</tr>
+		       				            
+		        </form>
+			</table>
+			
+		</div>
+		<div class="blank"></div>
+		<div class="total-list clear-fix">
+			<button>去结算</button>
+			<div class="total-box">
+	            <td  colspan="3"><a href=""></a></td>
+	            <td colspan="5" class="shopend">合计：<label id="total" class="yellow"></label> 元<br /></td>
+	        </div>
+	            
+        </div>
+	</div>
+	
+
 	<div class="box"></div>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript">
 		$('.box').load('common.html footer')
+	</script>
+	<script type="text/javascript" src="js/cart.js"></script>
+	<script type="text/javascript" src="js/bigger.js"></script>
+	<script type="text/javascript">
+
+		var a=localStorage.name;
+		var b=localStorage.price;
+		var c=localStorage.color;
+		console.log(a);
+		$('.cart_td_3>a').html(a+c);
+		$('.cart_td_4').html(b);
+		
+		// $("<tr id='product2'></tr>").appendTo($("#shopping"));
+		// $("<tr class='cart_td_1'></tr>").appendTo($('#product2'));
+		// $("<tr class='cart_td_2'></tr>").appendTo($('#product2'));
+		// $("<tr class='cart_td_3'></tr>").appendTo($('#product2'));
+		// $("<tr class='cart_td_4'></tr>").appendTo($('#product2'));
+		// $("<tr class='cart_td_5'></tr>").appendTo($('#product2'));
+		// $("<tr class='cart_td_6'></tr>").appendTo($('#product2'));
+		// $("<tr class='cart_td_7'></tr>").appendTo($('#product2'));
+		// $('<input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" />').appendTo($('#product2').find('.cart_td_1'));
+		// $('<img src="images/qingchun-80.png" alt="shopping"/>').appendTo($('#product2').find('.cart_td_2'));
+		// $(('<a href="#"></a>').html(a+c)).appendTo($('#product2').find('.cart_td_3'));
+
 	</script>
 </body>
 </html>

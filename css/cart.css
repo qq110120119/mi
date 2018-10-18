@@ -71,7 +71,85 @@
 }
 
 .cart-main{
-	width: 100%;
-	height: 100px;
+	width: 100%;	
 	background: #f5f5f5;
+	padding-top: 38px;
+	padding-bottom: 38px;
+}
+.cart-main .container{
+	width: 1226px;
+	margin: 0 auto;
+	background: white;
+}
+.cart-main .list-head{
+	height: 70px;
+    line-height: 70px;
+    padding-right: 26px;
+    color: #424242;
+}
+.blank{
+	width: 1226px;
+	height: 20px;
+	margin: 0 auto;
+}
+.total-list{
+	height: 50px;
+    text-align: right;
+    background-color: #fff;
+    position: relative;
+    width: 1226px;
+    margin: 0 auto;
+}
+.container a{
+	color:#333;
+	font-size: 18px;
+}
+.cart_td_5 .hand{
+	float: left;
+}
+.cart_td_5 .num_input{
+	float: left;
+	height: 38px;
+	width: 72px;
+	text-align: center;
+	border:0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.cart_td_6{
+	color: #ff6700;
+}
+.cart_td_5 .hand{
+	display: block;
+	cursor: pointer;
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	line-height: 38px;
+	border: 1px solid #ccc;
+	user-select: none;
+}
+
+.total-box{
+	width: 250px;
+	float: right;
+	line-height: 50px;
+	color: #ff6700;
+}
+.total-list button{
+	float: right;
+	width: 200px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    margin-left: 50px;
+    vertical-align: top;
+    background: #ff6700;
+    border: 1px solid #ff6700;
+    color: white;
+    cursor: pointer;
+}
+.total-list label{
+	font-size: 30px;
+	color: #ff6700;
 }

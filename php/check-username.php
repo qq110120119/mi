@@ -4,11 +4,11 @@
     header("Content-Type: application/json");
     // 允许所有域名跨域
     header("Access-Control-Allow-Origin:*");
-    include "public/connect_db.php";
+    include "public/connect-db.php";
     // 获取传输的json字符串
     $json = json_decode(file_get_contents("php://input"));
     $username = $json -> username;
-    $sql = "SELECT * from shop_user WHERE username='$username'";
+    $sql = "SELECT * from user WHERE username='$username'";
     $coon = new db();
     // 判断用户名称是否存在
     $rows = $coon -> Query($sql, 2);

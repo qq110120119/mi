@@ -26,4 +26,4 @@ var $hour=document.querySelector('.count-hour');
 					}
 					// console.log(''+hover+'/'+minuse +'/'+secont)
 				}
-				 setInterval(function() {fn('2018/10/17');},1000);
+				 setInterval(function() {fn('2018/10/19');},1000);
